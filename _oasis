@@ -1,0 +1,27 @@
+OASISFormat:  0.4
+OCamlVersion: >= 4.01.0
+Name:         ntp
+Version:      0.1.0
+Authors:      Gabriel McArthur
+Maintainers:  Gabriel McArthur <gabriel.mcarthur@gmail.com>
+License:      ISC
+Synopsis:     An implentation of the NTP protocol.
+Description:  A pure OCaml implementation of the NTP protocol.
+  It is intended to reasonably capture the behavior of NTP's various
+  RFCs.
+Homepage:     https://github.com/gabemc/ocaml-ntp
+Plugins:      META (0.3)
+BuildTools:   ocamlbuild
+
+Flag lwt
+  Description: bind the Lwt library
+  Default: false
+
+Library ntp
+  Path: lib
+  Findlibname: ntp
+  Pack: true
+  Modules:
+    Constants, Packets
+  BuildDepends: cstruct, cstruct.syntax, ipaddr, io-page
+  XMetaRequires: cstruct, ipaddr, io-page

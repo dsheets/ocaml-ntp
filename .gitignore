@@ -1,0 +1,14 @@
+_build/
+_config/
+setup.data
+setup.bin
+setup.log
+*.native
+*.byte
+*.cmi
+*.cmo
+*.cmx
+*.o
+setup.ml
+myocamlbuild.ml
+_tags

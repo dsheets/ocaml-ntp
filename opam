@@ -1,0 +1,25 @@
+opam-version: "1"
+maintainers: "gabriel.mcarthur@gmail.com"
+authors: [
+  "Gabriel McArthur"
+]
+homepage: "https://github.com/gabemc/ocaml-ntp"
+license: "LGPL-2.0 &\n   LGPL-2.1 with OCaml linking exception &\n   ISC"
+tags: [
+  "org:mirage"
+  "org:xapi-project"
+]
+build: [
+  ["make build"]
+  ["make install"]
+]
+remove: [["ocamlfind" "ntp"]]
+depends: [
+  "lwt" {>= "2.4.5"}
+  "cstruct" {>= "1.4.0"}
+  "ocamlfind"
+  "cmdliner"
+  "ipaddr" {>= "2.5.0"}
+  "io-page"
+]
+ocaml-version: [>= "4.00.0"]
