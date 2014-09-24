@@ -24,7 +24,7 @@ setup.data: setup.bin
 clean:
 	./setup.bin -distclean
 	./setup.bin -clean
-	$(RM) -f setup.data setup.bin setup.ml _tags myocamlbuild.ml
+	$(RM) -f setup.data setup.bin setup.ml myocamlbuild.ml
 
 build: setup.data setup.bin
 	./setup.bin -build -j $(J) $(OFLAGS)

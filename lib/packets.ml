@@ -18,9 +18,9 @@ cenum local_clock_action {
 cenum system_flags {
   FLAGS = 0;  (* any system flags *)
   BCSTENAB = 0x1; (* enable broadcast client *)
-}
+} as uint8_t
 
 (* Peer flags *)
 cenum peer_flags {
   FLAGS = 0;
-}
+} as uint8_t
