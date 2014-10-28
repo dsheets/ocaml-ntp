@@ -5,6 +5,9 @@
 (* NTP Version number *)
 let _VERSION = 4
 
+(* NTP Port number *)
+let _PORT = 123
+
 (* % of minimum dispersions *)
 let _MINDISP = 0.01
 

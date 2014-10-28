@@ -22,6 +22,6 @@ Library ntp
   Findlibname: ntp
   Pack: true
   Modules:
-    Constants, Packets
+    Buf, Constants, Packets
   BuildDepends: cstruct, cstruct.syntax, ipaddr, io-page
   XMetaRequires: cstruct, ipaddr, io-page
